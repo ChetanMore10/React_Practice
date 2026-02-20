@@ -1,0 +1,95 @@
+/* Main container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Counter number styling */
+.counter-display {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #646cff;
+  margin: 2rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Button container */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Button base styles */
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Increase button - Green */
+.btn-increase {
+  background-color: #22c55e;
+  color: white;
+}
+
+.btn-increase:hover {
+  background-color: #16a34a;
+}
+
+/* Decrease button - Red */
+.btn-decrease {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-decrease:hover {
+  background-color: #dc2626;
+}
+
+/* Add 5 button - Blue */
+.btn-add5 {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-add5:hover {
+  background-color: #2563eb;
+}
+
+/* Remove 5 button - Orange */
+.btn-remove5 {
+  background-color: #f97316;
+  color: white;
+}
+
+.btn-remove5:hover {
+  background-color: #ea580c;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
