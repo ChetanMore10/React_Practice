@@ -1,0 +1,139 @@
+/* Gallery Container */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 1rem;
+}
+
+/* Image Grid */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem;
+  overflow-y: auto;
+  flex: 1;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+/* Card Styles */
+.gallery-card {
+  width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+}
+
+.card-image-container {
+  height: 160px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-color: #1a1a1a;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-author {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Link styles */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover {
+  color: inherit;
+}
+
+/* Pagination Controls */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(to top, #1a1a1a 0%, transparent 100%);
+  margin-top: auto;
+}
+
+.pagination-btn {
+  background-color: #f59e0b;
+  color: #000000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #d97706;
+  transform: scale(0.95);
+}
+
+.pagination-btn:active:not(:disabled) {
+  transform: scale(0.92);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a3a3a3;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Loading State */
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-text {
+  color: #a3a3a3;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Card wrapper */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
